@@ -11,7 +11,7 @@ const cancelBtn = document.getElementById("cancel-btn");
 const bookTitle = document.querySelector("[name='title']");
 const bookAuthor = document.querySelector("[name='author']");
 const formPages = document.querySelector("[name='pages']");
-const formIsRead = document.querySelector("[name='title']");
+const formIsRead = document.querySelector("#isRead");
 
 const propReadStateBtn = document.querySelector("#read-state");
 const readStateBtns = document.querySelectorAll(".read-state");
