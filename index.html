@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://use.typekit.net/dog1kjn.css" />
+        <link rel="stylesheet" href="styles.css" type="text/css" />
+        <script src="script.js" defer></script>
+        <title>Library App</title>
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <h1 id="logo">library</h1>
+                <img src="assets/images/libib_logo_dark_blue.svg" alt="books logo" />
+            </div>
+            <ul>
+                <li id="addBookBtn">+ Add Book</li>
+                <li id="loginBtn">Login</li>
+            </ul>
+        </header>
+
+        <main>
+            <!-- code for Book -->
+
+            <div class="container">
+                <div class="book">
+                    <div class="front">
+                        <div class="cover">
+                            <p class="num-up">THE HOLY BIBLE</p>
+                            <p class="author">KING JAMES VERSION</p>
+                        </div>
+                    </div>
+                    <div class="left-side">
+                        <h2>
+                            <span>KING JAMES VERSION</span>
+                            <span>THE HOLY BIBLE</span>
+                        </h2>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button disabled class="read-state">Read</button>
+                    <button disabled class="remove-btn">Remove</button>
+                    <div class="pages-div">1,281 Pages</div>
+                </div>
+            </div>
+        </main>
+        <!-- modal -->
+        <dialog id="modal">
+            <form autocomplete="off" class="form" method="">
+                <h1 id="form-title">Add new book</h1>
+
+                <input name="title" placeholder="Title" type="text" required />
+
+                <input name="author" placeholder="Author" type="text" required />
+
+                <input name="pages" placeholder="Number Of Pages" type="number" max="9999" min="1" required />
+
+                <div class="is-read-container">
+                    <label for="isRead">Have you read it?</label>
+                    <input class="checkbox" type="checkbox" id="isRead" />
+                </div>
+
+                <div class="option">
+                    <button id="submit-btn" type="submit">Submit</button>
+                    <button id="cancel-btn">Cancel</button>
+                </div>
+            </form>
+        </dialog>
+    </body>
+</html>
