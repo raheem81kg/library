@@ -196,7 +196,7 @@ button {
     font-family: open-sans, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 14.3px;
+    font-size: 13.1px;
     text-transform: uppercase;
     cursor: pointer;
     margin: 0;
@@ -303,7 +303,7 @@ header li:hover {
 .pages-div {
     display: inline;
 
-    font-size: 14.3px;
+    font-size: 14.1px;
     font-family: open-sans, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -324,7 +324,7 @@ header li:hover {
     flex-direction: column;
     gap: 1.775rem;
 
-    font-size: 14.5px;
+    font-size: 13.1px;
     font-family: open-sans, sans-serif;
     font-weight: 700;
 }
