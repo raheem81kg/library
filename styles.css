@@ -37,6 +37,8 @@ main {
         sans-serif;
     color: #333;
     background-color: #c4bec6;
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
 
 /* ... */
