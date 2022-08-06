@@ -13,6 +13,7 @@ const bookAuthor = document.querySelector("[name='author']");
 const formPages = document.querySelector("[name='pages']");
 const formIsRead = document.querySelector("[name='title']");
 
+const propReadStateBtn = document.querySelector("#read-state");
 const readStateBtns = document.querySelectorAll(".read-state");
 const removeBtns = document.querySelectorAll(".remove-btn");
 
@@ -136,13 +137,21 @@ function addBookToLibrary() {
 // remove button
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("remove-btn")) {
-        console.log("works");
         let elementToRemove = document.querySelector(`main > [data-id-no="${e.target.dataset.idNo}"]`);
         elementToRemove.remove();
     }
 });
 
 // read button
+propReadStateBtn.addEventListener("click", (e) => {
+    if (e.target.textContent.toUpperCase() === "READ") {
+        e.target.textContent = "NOT READ";
+        e.target.style.backgroundColor = "#ff9c9c";
+    } else if (e.target.textContent.toUpperCase() === "NOT READ") {
+        e.target.textContent = "READ";
+        e.target.style.backgroundColor = "#f9fbfa";
+    }
+});
 
 document.addEventListener("click", (e) => {
     if (e.target.classList.contains("read-state") && e.target.textContent.toUpperCase() === "READ") {
