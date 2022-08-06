@@ -1,7 +1,6 @@
 /* ... */
-html,
 body {
-    background-color: #c4bec6;
+    background-color: white;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -23,6 +22,7 @@ main {
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 2rem;
     padding: 1.575rem 1.125rem;
+    background-color: #c4bec6;
 }
 
 .footer {
@@ -31,6 +31,9 @@ main {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
         sans-serif;
     color: #333;
+    background-color: #c4bec6;
+    padding-top: 6.45px;
+    padding-bottom: 6.45px;
 }
 
 /* ... */
