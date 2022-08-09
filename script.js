@@ -123,6 +123,11 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
+
+Book.prototype.changeRead = function () {
+    this.read = !this.read;
+};
+
 function addBookToLibrary() {
     title = bookTitle.value;
     author = bookAuthor.value;
@@ -157,10 +162,10 @@ document.addEventListener("click", (e) => {
     if (e.target.classList.contains("read-state") && e.target.textContent.toUpperCase() === "READ") {
         e.target.textContent = "NOT READ";
         e.target.style.backgroundColor = "#ff9c9c";
-        Library[e.target.dataset.idNo].read = false;
+        Library[e.target.dataset.idNo].changeRead();
     } else if (e.target.classList.contains("read-state") && e.target.textContent.toUpperCase() === "NOT READ") {
         e.target.textContent = "READ";
-        Library[e.target.dataset.idNo].read = true;
+        Library[e.target.dataset.idNo].changeRead();
         e.target.style.backgroundColor = "#f9fbfa";
     }
 });
