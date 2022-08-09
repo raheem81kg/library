@@ -123,7 +123,6 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
-
 Book.prototype.changeRead = function () {
     this.read = !this.read;
 };
@@ -171,7 +170,5 @@ document.addEventListener("click", (e) => {
 });
 
 function showBooks() {
-    for (let book in Library) {
-        console.log(book.title);
-    }
+    Library.forEach((book) => console.log(book.title));
 }
